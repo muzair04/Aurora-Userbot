@@ -1,7 +1,7 @@
 {
-    "name": "Ayra UserBot",
-    "description": "Ayra Userbot Dibuat Untuk String Telethon Dan Pyrogram Untuk ID 5 Pasti Aman.",
-    "logo": "https://graph.org/file/fa8b4f60dd9d81ef33249.jpg",
+    "name": "Aurora UserBot",
+    "description": "Aurora Userbot Dibuat Untuk String Telethon Dan Pyrogram Untuk ID 5 Pasti Aman.",
+    "logo": "https://graph.org/file/5e87b24315262edfb40db.jpg",
     "keywords": [
         "Telethon",
         "Pyrogram",
@@ -9,7 +9,7 @@
         "userbot",
         "python"
     ],
-    "repository": "https://github.com/naya1503/Ayra",
+    "repository": "https://github.com/naya1503/Aurora-Userbot",
     "success_url": "https://t.me/rizzvbss",
     "stack": "container",
     "env": {
