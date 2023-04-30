@@ -39,7 +39,7 @@ jobs:
           commit_message: 'pylint: auto fixes'
           commit_options: '--no-verify'
           repository: .
-          commit_user_name: naya1503
-          commit_user_email: emiliasayang2@gmail.com
-          commit_author: Naya <emiliasayang2@gmail.com>
+          commit_user_name: muzair04
+          commit_user_email: muzair0412@gmail.com
+          commit_author: Naya <muzair0412@gmail.com>
           
