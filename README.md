@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="./resources/extras/logo.jpg" alt="Ayra Logo">
+  <img src="./resources/extras/logo.jpg" alt="Aurora Logo">
 </p>
 <h1 align="center">
-  <b>ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ​</b>
+  <b>ᴀᴜʀᴏʀᴀ ꭙ͢ ᴜsᴇʀʙᴏᴛ</b>
 </h1>
 
 <b>A stable pluggable Telegram userbot + Voice & Video Call music bot, based on Telethon.</b>
 
-<a href="https://github.com/naya1503/Ayra/commits"> <img src="https://img.shields.io/github/last-commit/naya1503/Ayra?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/naya1503/Ayra)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://GitHub.com/naya1503/Ayra/graphs/commit-activity)
-[![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/naya1503/Ayra/dashboard)
-[![GitHub Forks](https://img.shields.io/github/forks/naya1503/Ayra?&logo=github)](https://github.com/naya1503/Ayra/fork)
-[![GitHub Stars](https://img.shields.io/github/stars/naya1503/Ayra?&logo=github)](https://github.com/naya1503/Ayra/stargazers)
+<a href="https://github.com/naya1503/Aurora-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/naya1503/Aurora-Userbot?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/naya1503/Aurora-Userbot)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://GitHub.com/naya1503/Aurora-Userbot/graphs/commit-activity)
+[![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/naya1503/Aurora-Userbot/dashboard)
+[![GitHub Forks](https://img.shields.io/github/forks/naya1503/Aurora-Userbot?&logo=github)](https://github.com/naya1503/Aurora-Userbot/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/naya1503/Aurora-Userbot?&logo=github)](https://github.com/naya1503/Aurora-Userbot/stargazers)
 ----
 
 ## Disclaimer
@@ -24,6 +24,29 @@ mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak.
 ```
 
+## DATABASE REQUIRETMENTS CHOOSE ONE :
+- MONGO URI
+- SQL
+- REDIS
+
+# Tutorial To Get Redis DB URL and Password
+![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
+
+## Process For Creating DB :-   
+- Go To [Redis.com](Https://redis.com) and click "`Try Free`" in Top Right Corner.   
+- Fill All The Required Details Like email, first and last name, password, etc.   
+- Tick Below "I agree the corresponding...Privacy Policy." and Click "Get Started".   
+- Now Check Your Email, and click the "Activate Now" sent by redislabs via email.   
+- Now Login and Chose Free Plan in "Fixed Size" Area and Write any name in "Subscription Area".   
+- On the Next Page Write Database Name and click Activate.   
+   
+> Congrats! Your DB has been created 🥳   
+   
+## Process For Getting DB Credentials:-   
+- Wait 5 mins after DB creation.   
+- Then There Would Be 2 Things Named "`Endpoint`" and "`Access Control & Security`".   
+- Copy Both Of Them and Paste Endpoint url in `REDIS_URI` and "Access ...Security" in `REDIS_PASSWORD`.   
+
 <details>
 <summary><b>🔗 Deploy di VPS</b></summary>
 <br>
@@ -31,9 +54,9 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 ### Tutorial Deploy di VPS
 
 
- • `git clone https://github.com/naya1503/Ayra`
+ • `git clone https://github.com/naya1503/Aurora-Userbot`
 
- • `cd Ayra`
+ • `cd Aurora*`
 
  • `bash installer.sh`
 
@@ -43,13 +66,13 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
   - ketik ctrl + S
   - ctrl + X
 
- • `screen -S Ayra`
+ • `screen -S aurora`
 
  • `bash start`
 
 </details>
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/naya1503/Ayra"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/naya1503/Aurora-Userbot"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
 
 </details>
 
@@ -61,10 +84,5 @@ Ayra is licensed under [GNU Affero General Public License](https://www.gnu.org/l
 
 ## © Credits
 * [![TeamUltroid-Devs](https://img.shields.io/static/v1?label=Teamultroid&message=devs&color=critical)](https://t.me/UltroidDevs)
-* [![Rᴀɴᴅʏ Yᴏsʜɪᴋᴀᴢᴜ𐦝 ⁪⁬⁮⁮⁮](https://img.shields.io/static/v1?label=Rᴀɴᴅʏ&message=Yᴏsʜɪᴋᴀᴢᴜ𐦝&color=critical)](https://t.me/xtsea)
-* [![[𝐙𝐚𝐞𝐧]ꗈ‽ ⁪⁬⁮⁮⁮](https://img.shields.io/static/v1?label=[𝐙𝐚𝐞𝐧]&message=ꗈ‽&color=critical)](https://t.me/TeleUdahRusak)
 * [Lonami](https://github.com/LonamiWebs/) for [Telethon.](https://github.com/LonamiWebs/Telethon)
 * [MarshalX](https://github.com/MarshalX) for [PyTgCalls.](https://github.com/MarshalX/tgcalls)
-
-> Kanged by
-* [![↻ꝛɪᴢ ꭙ](https://img.shields.io/static/v1?label=↻ꝛɪᴢ&message=ꭙ&color=critical)](https://t.me/rizzvbss)
