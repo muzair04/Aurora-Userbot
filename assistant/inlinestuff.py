@@ -13,14 +13,13 @@ from . import *
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/naya1503/Ayra"),
-        Button.url("• Support •", url="t.me/kynansupport"),
+        Button.url("• Channel •", url="https://t.me/Kamarsnow"),
     ],
 ]
 
 ofox = "https://graph.org/file/231f0049fcd722824f13b.jpg"
 gugirl = "https://graph.org/file/0df54ae4541abca96aa11.jpg"
-aypic = "https://graph.org/file/02f9ca4617cec58377b9d.jpg"
+aypic = "https://graph.org/file/5e87b24315262edfb40db.jpg"
 
 apis = [
     "QUl6YVN5QXlEQnNZM1dSdEI1WVBDNmFCX3c4SkF5NlpkWE5jNkZV",
@@ -28,7 +27,7 @@ apis = [
     "QUl6YVN5RGRPS253blB3VklRX2xiSDVzWUU0Rm9YakFLSVFWMERR",
 ]
 
-
+"""
 @in_pattern("repo", owner=True)
 async def repo(e):
     res = [
@@ -41,3 +40,4 @@ async def repo(e):
         ),
     ]
     await e.answer(res, switch_pm="Ayra Repo.", switch_pm_param="start")
+"""
