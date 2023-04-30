@@ -14,25 +14,18 @@ from telethon.errors import (
 from . import LOG_CHANNEL, LOGS, Button, asst, ayra_cmd, eor, get_string
 
 REPOMSG = """
-◈ **ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ​** ◈\n
-◈ Repo - [Click Here](https://github.com/naya1503/Ayra)
-◈ Addons - [Click Here](https://github.com/naya1503/addons)
-◈ Support - @kynansupport
+◈ **ᴀᴜʀᴏʀᴀ ꭙ͢ ᴜsᴇʀʙᴏᴛ** ◈
 """
 
 RP_BUTTONS = [
-    [
-        Button.url(get_string("bot_3"), "https://github.com/naya1503/Ayra"),
-        Button.url("Addons", "https://github.com/naya1503/addons"),
-    ],
-    [Button.url("Support Group", "t.me/kynansupport")],
+    [Button.url("Channel", "https://t.me/Kamarsnow")],
 ]
 
-AYSTRING = """🎇 **Thanks for Deploying ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ!**
+AYSTRING = """🎇 **Thanks for Deploying ᴀᴜʀᴏʀᴀ ꭙ͢ ᴜsᴇʀʙᴏᴛ!**
 
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
 
-
+"""
 @ayra_cmd(
     pattern="repo$",
     manager=True,
@@ -64,3 +57,4 @@ async def useAyra(rs):
     )
     if not (rs.chat_id == LOG_CHANNEL and rs.client._bot):
         await eor(rs, f"**[Click Here]({msg.message_link})**")
+"""
