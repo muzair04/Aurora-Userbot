@@ -50,8 +50,7 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/naya1503/Ayra"),
-        Button.url("• Support •", url="t.me/kynansupport"),
+        Button.url("• Channel •", url="t.me/Kamarsnow"),
     ],
 ]
 
@@ -155,7 +154,7 @@ async def uptd_plugin(event):
                 help_ += "\n"
     if not help_:
         help_ = f"{file} has no Detailed Help!"
-    help_ += "\n© @KynanSupport"
+    help_ += "\n© @Kamarsnow"
     buttons = []
     data = f"uh_{key}_"
     if index is not None:
@@ -184,17 +183,17 @@ async def _(event):
     changelog_str = changelog + "\n\n" + get_string("inline_8")
     if len(changelog_str) > 1024:
         await event.edit(get_string("upd_4"))
-        with open("ayra_updates.txt", "w+") as file:
+        with open("updates.txt", "w+") as file:
             file.write(tl_chnglog)
         await event.edit(
             get_string("upd_5"),
-            file="ayra_updates.txt",
+            file="updates.txt",
             buttons=[
                 [Button.inline("Update Sekarang", data="updatenow")],
                 [Button.inline("❮", data="ownr")],
             ],
         )
-        remove("ayra_updates.txt")
+        remove("updates.txt")
     else:
         await event.edit(
             changelog_str,
