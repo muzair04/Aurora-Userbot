@@ -13,8 +13,6 @@ START = """
 ✘  /start : Check I am Alive or not.
 ✘  /help : Get This Message.
 ✘  /repo : Get Bot's Repo..
-
-🧑‍💻 Join **@stufsupport**
 """
 
 ADMINTOOLS = """✘ **AdminTools** ✘
