@@ -58,7 +58,7 @@ _buttons = {
         ],
     },
     "apauto": {
-        "text": "Ini akan otomatis menyetujui pesan keluar",
+        "text": "Ini akan otomatis menyetujui Room Chat",
         "buttons": [
             [Button.inline("Auto Ok On", data="apon")],
             [Button.inline("Auto Ok On", data="apof")],
@@ -269,7 +269,7 @@ async def changes(okk):
                 language="md",
             )
             return await okk.edit(
-                f"**• Ayra Userbot •**{cli}", file=img, buttons=button
+                f"**• Aurora Userbot •**{cli}", file=img, buttons=button
             )
         except Exception as er:
             LOGS.exception(er)
@@ -277,14 +277,14 @@ async def changes(okk):
     if len(changelog_str) > 1024:
         await okk.edit(get_string("upd_4"))
         await asyncio.sleep(2)
-        with open("ayra_updates.txt", "w+") as file:
+        with open("updates.txt", "w+") as file:
             file.write(tl_chnglog)
         await okk.edit(
             get_string("upd_5"),
-            file="ayra_updates.txt",
+            file="updates.txt",
             buttons=button,
         )
-        remove("ayra_updates.txt")
+        remove("updates.txt")
         return
     await okk.edit(
         changelog_str,
