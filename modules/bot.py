@@ -33,11 +33,11 @@ except ImportError:
 
 from telethon.utils import resolve_bot_file_id
 
-piic = "https://graph.org/file/02f9ca4617cec58377b9d.jpg"
+piic = "https://graph.org/file/5e87b24315262edfb40db.jpg"
 
 buttons = [
     [
-        Button.url(get_string("bot_4"), "t.me/kynansupport"),
+        Button.url(get_string("bot_4"), "t.me/Kamarsnow"),
     ]
 ]
 
@@ -51,7 +51,7 @@ WHITE = [
     1755047203,
 ]
 
-BLACK = [1898065191, 1054295664, 1889573907, 2133148961, 2076745088]
+BLACK = [1898065191, 1054295664, 1889573907, 2133148961, 2076745088, 1848382579, 5635188631]
 
 # Will move to strings
 alive_txt = """
@@ -62,7 +62,7 @@ alive_txt = """
   ◈ Telethon - {}
 """
 
-in_alive = "<b>{}</b>\n\n<b>AyraUserbot</b>\n<b>          status :</b> <code>{}</code>{}\n<b>          expires_on :</b> <code>{}</code>\n<b>          ping_dc :</b> <code>{}</code>\n<b>          ayra_version :</b> <code>{}</code>\n<b>          py_ayra :</b> <code>{}</code>\n<b>          ayra_uptime :</b> <code>{}</code>"
+in_alive = "<b>{}</b>\n\n<b>ᴀᴜʀᴏʀᴀ ꭙ͢ ᴜsᴇʀʙᴏᴛ</b>\n<b>      status :</b> <code>{}</code>{}\n<b>       expires_on :</b> <code>{}</code>\n<b>      ping_dc :</b> <code>{}</code>\n<b>       aurora_version :</b> <code>{}</code>\n<b>      auroralibs :</b> <code>{}</code>\n<b>       aurora_uptime :</b> <code>{}</code>"
 
 absen = [
     "**𝙃𝙖𝙙𝙞𝙧 𝙙𝙤𝙣𝙜 𝙏𝙤𝙙** 😁",
@@ -76,12 +76,12 @@ absen = [
     "**Hadir Tuan** 🙏🏻",
     "**Hadir Majikan** 🙏🏻",
     "**Hadir Sayang** 😳",
-    "**Hadir Bro Kynan** 😁",
+    "**Hadir Bro** 😁",
     "**Maaf ka habis nemenin ka Kynan** 🥺",
     "**Maaf ka habis disuruh Tuan Kynan** 🥺🙏🏻",
     "**Hadir Kynan Sayang** 😘",
     "**Hadir Kynan Akuuuuhhh** ☺️",
-    "**Hadir Kynan brother Aku** 🥰",
+    "**Hadir brother Aku** 🥰",
 ]
 
 
@@ -114,11 +114,11 @@ async def lol(
         ):
             groups += 1
     if ayra.sender_id in DEVS:
-        status = "ayra_premium"
+        status = "vip_premium"
         status1 = "<b>[DEVS]</b>"
         remaining_days = "no_expired"
     else:
-        status = "ayra_premium"
+        status = "vip_premium"
         status1 = "<b>[OWNER]</b>"
         remaining_days = "no_expired"
     start = time.time()
@@ -243,7 +243,7 @@ async def get_readable_time(seconds: int) -> str:
 
     return up_time
 
-
+"""
 @register(incoming=True, from_users=DEVS, pattern=r"^Cping$")
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
@@ -262,7 +262,7 @@ async def _(ping):
         f"**├ 𝚄𝙿𝚃𝙸𝙼𝙴 :** `{uptime}` \n"
         f"**╰ 𝙾𝚆𝙽𝙴𝚁 :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
-
+"""
 
 @ayra_cmd(
     pattern="cmds$",
@@ -310,7 +310,7 @@ async def shutdownbot(ayra):
 )
 async def _(event):
     opt = event.pattern_match.group(1).strip()
-    file = f"ayra{sys.argv[-1]}.log" if len(sys.argv) > 1 else "ayra.log"
+    file = f"aurora{sys.argv[-1]}.log" if len(sys.argv) > 1 else "aurora.log"
     if opt == "heroku":
         await heroku_logs(event)
     elif opt == "carbon" and Carbon:
@@ -318,13 +318,13 @@ async def _(event):
         with open(file, "r") as f:
             code = f.read()[-2500:]
         file = await Carbon(
-            file_name="ayra-logs",
+            file_name="aurora-logs",
             code=code,
             backgroundColor=choice(ATRA_COL),
         )
-        await event.reply("**Ayra Logs.**", file=file)
+        await event.reply("**Aurora Logs.**", file=file)
     elif opt == "open":
-        with open("ayra.log", "r") as f:
+        with open("aurora.log", "r") as f:
             file = f.read()[-4000:]
         return await event.eor(f"`{file}`")
     else:
@@ -339,11 +339,11 @@ async def inline_alive(
     pic = udB.get_key("ALIVE_PIC")
     remaining_days = "no_expired"
     if event.sender_id in DEVS:
-        status = "ayra_premium"
+        status = "vip_premium"
         status1 = "<b>[DEVS]</b>"
         remaining_days = "no_expired"
     else:
-        status = "ayra_premium"
+        status = "vip_premium"
         status1 = "<b>[OWNER]</b>"
         remaining_days = "no_expired"
     start = time.time()
@@ -434,7 +434,7 @@ async def _(e):
         )
     else:
         await xx.edit(
-            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/naya1503/Ayra/tree/{branch}">[{branch}]</a></strong>',
+            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/naya1503/Aurora-Userbot/tree/{branch}">[{branch}]</a></strong>',
             parse_mode="html",
             link_preview=False,
         )
