@@ -7,9 +7,6 @@
 
 
 from telethon import Button
-from telethon.tl.types import InputWebDocument as wb
-
-from . import *
 
 SUP_BUTTONS = [
     [

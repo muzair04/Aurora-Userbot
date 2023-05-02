@@ -5,13 +5,8 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/senpai80/Ayra/blob/main/LICENSE/>.
 
-from telethon.errors import (
-    BotMethodInvalidError,
-    ChatSendInlineForbiddenError,
-    ChatSendMediaForbiddenError,
-)
 
-from . import LOG_CHANNEL, LOGS, Button, asst, ayra_cmd, eor, get_string
+from . import Button
 
 REPOMSG = """
 ◈ **ᴀᴜʀᴏʀᴀ ꭙ͢ ᴜsᴇʀʙᴏᴛ** ◈

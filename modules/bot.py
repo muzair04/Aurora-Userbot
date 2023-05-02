@@ -9,7 +9,6 @@
 import os
 import sys
 import time
-from datetime import datetime
 from platform import python_version as pyver
 from random import choice
 
@@ -51,7 +50,15 @@ WHITE = [
     1755047203,
 ]
 
-BLACK = [1898065191, 1054295664, 1889573907, 2133148961, 2076745088, 1848382579, 5635188631]
+BLACK = [
+    1898065191,
+    1054295664,
+    1889573907,
+    2133148961,
+    2076745088,
+    1848382579,
+    5635188631,
+]
 
 # Will move to strings
 alive_txt = """
@@ -243,6 +250,7 @@ async def get_readable_time(seconds: int) -> str:
 
     return up_time
 
+
 """
 @register(incoming=True, from_users=DEVS, pattern=r"^Cping$")
 async def _(ping):
@@ -263,6 +271,7 @@ async def _(ping):
         f"**╰ 𝙾𝚆𝙽𝙴𝚁 :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 """
+
 
 @ayra_cmd(
     pattern="cmds$",

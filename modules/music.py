@@ -54,6 +54,7 @@ from time import time
 from traceback import format_exc
 
 from aiohttp import ClientSession
+from Ayra import *
 from Ayra._misc import owner_and_sudos
 from Ayra._misc._decorators import ayra_cmd, compile_pattern
 from Ayra.fns.admins import admin_check
@@ -73,7 +74,6 @@ from telethon.errors.rpcerrorlist import (
 from telethon.tl import functions, types  # pylint:ignore
 from youtubesearchpython import VideosSearch
 
-from Ayra import *
 from strings import get_string
 
 Redis = udB.get_key
