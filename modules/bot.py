@@ -69,7 +69,7 @@ alive_txt = """
   ◈ Telethon - {}
 """
 
-in_alive = "<b>{}</b>\n\n<b>ᴀᴜʀᴏʀᴀ ꭙ͢ ᴜsᴇʀʙᴏᴛ</b>\n<b>      status :</b> <code>{}</code>{}\n<b>       expires_on :</b> <code>{}</code>\n<b>      ping_dc :</b> <code>{}</code>\n<b>       aurora_version :</b> <code>{}</code>\n<b>      auroralibs :</b> <code>{}</code>\n<b>       aurora_uptime :</b> <code>{}</code>"
+in_alive = "<b>{}</b>\n\n<b>ᴀᴜʀᴏʀᴀ ꭙ͢ ᴜsᴇʀʙᴏᴛ</b>\n<b>     status :</b> <code>{}</code>{}\n<b>     expires_on :</b> <code>{}</code>\n<b>     ping_dc :</b> <code>{}</code>\n<b>     aurora_version :</b> <code>{}</code>\n<b>     auroralibs :</b> <code>{}</code>\n<b>     aurora_uptime :</b> <code>{}</code>"
 
 absen = [
     "**𝙃𝙖𝙙𝙞𝙧 𝙙𝙤𝙣𝙜 𝙏𝙤𝙙** 😁",
