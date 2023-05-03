@@ -28,7 +28,7 @@ textblob
 wikipedia
 spotdl
 pyrogram
-auroralibs==8.0.4
+auroralibs==8.0.6
 akinator
 apscheduler
 beautifulsoup4
