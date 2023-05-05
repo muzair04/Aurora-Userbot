@@ -6,7 +6,7 @@
 # <https://www.github.com/senpai80/Ayra/blob/main/LICENSE/>.
 
 from datetime import datetime
-
+from dotenv import load_dotenv, set_key, unset_key
 from Ayra._misc import SUDO_M, owner_and_sudos
 from Ayra.dB.asst_fns import *
 from Ayra.fns.helper import inline_mention
@@ -18,6 +18,7 @@ from telethon.utils import get_display_name
 from strings import get_string
 
 from . import *
+load_dotenv(".env")
 
 Owner_info_msg = udB.get_key("BOT_INFO_START")
 custom_info = True
@@ -54,6 +55,29 @@ _start = [
     ],
 ]
 
+@asst_cmd(pattern=r"setvar (\S+)\s+(\S+)")
+async def set_env(event):
+    var_name = event.pattern_match.group(1)
+    var_value = event.pattern_match.group(2)
+    if not var_name:
+        return await event.reply("Berikan variable dan nilai value untuk ditetapkan!")
+    set_key(".env", var_name, var_value)
+
+    os.environ[var_name] = var_value
+
+    await event.eor(f"Variabel {var_name} berhasil ditambahkan.")
+
+
+@asst_cmd(pattern=r"delvar (\S+)")
+async def del_env(event):
+    var_name = event.pattern_match.group(1)
+    if not var_name:
+        return await event.reply("Berikan variable untuk dihapus!")
+    unset_key(".env", var_name)
+    if var_name in os.environ:
+        del os.environ[var_name]
+
+    await event.eor(f"Variabel {var_name} berhasil dihapus.")
 
 @callback("ownerinfo")
 async def own(event):
