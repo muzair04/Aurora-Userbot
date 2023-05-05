@@ -28,10 +28,14 @@ HNDLR anda menjadi `!`, default nya adalah `.`
 import os
 import re
 
+from dotenv import load_dotenv, set_key, unset_key
+
 from . import *
 
+load_dotenv(".env")
 
-@ayra_cmd(pattern="[sS][e][t][d][b]( (.*)|$)", fullsudo=False)
+
+@ayra_cmd(pattern="setdb( (.*)|$)", fullsudo=False)
 async def _(event):
     match = event.pattern_match.group(1).strip()
     if not match:
@@ -51,7 +55,32 @@ async def _(event):
         await event.eor(get_string("com_7"))
 
 
-@ayra_cmd(pattern="[dD][e][l][d][b]( (.*)|$)", fullsudo=False)
+@ayra_cmd(pattern=r"setvar (\S+)\s+(\S+)", fullsudo=False)
+async def set_env(event):
+    var_name = event.pattern_match.group(1)
+    var_value = event.pattern_match.group(2)
+    if not var_name:
+        return await event.eor("Berikan variable dan nilai value untuk ditetapkan!")
+    set_key(".env", var_name, var_value)
+
+    os.environ[var_name] = var_value
+
+    await event.eor(f"Variabel {var_name} berhasil ditambahkan.")
+
+
+@ayra_cmd(pattern=r"delvar (\S+)", fullsudo=False)
+async def del_env(event):
+    var_name = event.pattern_match.group(1)
+    if not var_name:
+        return await event.eor("Berikan variable untuk dihapus!")
+    unset_key(".env", var_name)
+    if var_name in os.environ:
+        del os.environ[var_name]
+
+    await event.eor(f"Variabel {var_name} berhasil dihapus.")
+
+
+@ayra_cmd(pattern="deldb( (.*)|$)", fullsudo=False)
 async def _(event):
     key = event.pattern_match.group(1).strip()
     if not key:
