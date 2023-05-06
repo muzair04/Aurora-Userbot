@@ -54,6 +54,7 @@ async def _(event):
     except BaseException:
         await event.eor(get_string("com_7"))
 
+
 @ayra_cmd(pattern=r"setvar (\S+)\s+(\S+)")
 async def setset(event):
     var_name = event.pattern_match.group(1)
@@ -93,7 +94,6 @@ async def deldel(event):
         del os.environ[var_name]
 
     await event.eor(f"Variabel {var_name} berhasil dihapus.")
-
 
 
 @ayra_cmd(pattern="deldb( (.*)|$)", fullsudo=False)
