@@ -33,11 +33,11 @@ import asyncio
 from Ayra.dB import DEVS
 from Ayra.dB.gcast_blacklist_db import add_gblacklist, list_bl, rem_gblacklist
 from Ayra.fns.tools import create_tl_btn, format_btn, get_msg_button
+from Ayra.kynan import register
 from telethon.errors.rpcerrorlist import FloodWaitError
 
 from . import HNDLR, NOSPAM_CHAT, ayra_cmd, eor, udB
 from ._inline import something
-from Ayra.kynan import register
 
 
 @ayra_cmd(pattern="[gG][c][a][s][t]( (.*)|$)", fullsudo=False)
